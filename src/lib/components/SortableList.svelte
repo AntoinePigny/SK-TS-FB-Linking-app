@@ -34,12 +34,10 @@
       isOver === dragged?.id ?? false
    }
    function onDragLeave(e: DragEvent) {
-      // @ts-ignore
       const dragged = getDraggedParent(e.target)
       isOver === dragged.id && (isOver = false)
    }
    function onDrop(e: DragEvent) {
-      // @ts-ignore
       isOver = false
       const dragged = getDraggedParent(e.target)
       reorder({
@@ -74,6 +72,6 @@
 
 <style>
    .over {
-      @apply border-gray-400 scale-105;
+      @apply border-red-400;
    }
 </style>
