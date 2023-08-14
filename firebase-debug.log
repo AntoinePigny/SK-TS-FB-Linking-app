@@ -45,3 +45,144 @@
     at async deploy (C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2023-08-14T15:05:21.117Z] ----------------------------------------------------------------------
+[debug] [2023-08-14T15:05:21.119Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-14T15:05:21.119Z] CLI Version:   12.4.7
+[debug] [2023-08-14T15:05:21.120Z] Platform:      win32
+[debug] [2023-08-14T15:05:21.120Z] Node Version:  v18.12.1
+[debug] [2023-08-14T15:05:21.120Z] Time:          Mon Aug 14 2023 17:05:21 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2023-08-14T15:05:21.121Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-14T15:05:21.179Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-14T15:05:21.180Z] > authorizing via signed-in user (pigny.antoine@gmail.com)
+[debug] [2023-08-14T15:05:21.180Z] [iam] checking project fkit-linking-app for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-14T15:05:21.182Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions [none]
+[debug] [2023-08-14T15:05:21.182Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions x-goog-quota-user=projects/fkit-linking-app
+[debug] [2023-08-14T15:05:21.182Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T15:05:21.919Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions 200
+[debug] [2023-08-14T15:05:21.920Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T15:05:21.921Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app [none]
+[debug] [2023-08-14T15:05:22.203Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app 200
+[debug] [2023-08-14T15:05:22.204Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app {"projectId":"fkit-linking-app","projectNumber":"938099259232","displayName":"FKIT-Linking-App","name":"projects/fkit-linking-app","resources":{"hostingSite":"fkit-linking-app","storageBucket":"fkit-linking-app.appspot.com","locationId":"europe-west2"},"state":"ACTIVE","etag":"1_00ac3435-01c5-4570-bc9b-fe8958599259"}
+[debug] [2023-08-14T15:05:26.691Z] defaultcredentials: writing to file C:\Users\pigny\AppData\Roaming\firebase\pigny_antoine_gmail.com_application_default_credentials.json
+[debug] [2023-08-14T15:05:26.692Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites pageToken=&pageSize=10
+[debug] [2023-08-14T15:05:27.574Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 200
+[debug] [2023-08-14T15:05:27.574Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites {"sites":[{"name":"projects/fkit-linking-app/sites/fkit-linking-app","defaultUrl":"https://fkit-linking-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-14T15:05:27.575Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 
+[debug] [2023-08-14T15:05:28.420Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 200
+[debug] [2023-08-14T15:05:28.420Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites {"sites":[{"name":"projects/fkit-linking-app/sites/fkit-linking-app","defaultUrl":"https://fkit-linking-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-14T15:05:28.422Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config [none]
+[debug] [2023-08-14T15:05:29.186Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config 200
+[debug] [2023-08-14T15:05:29.186Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config {"projectId":"fkit-linking-app","appId":"1:938099259232:web:0c23b6b55926e786bc5005","storageBucket":"fkit-linking-app.appspot.com","locationId":"europe-west2","apiKey":"AIzaSyDsNANqGLjrSY19jxY1f8oTn0U9lDKoZxk","authDomain":"fkit-linking-app.firebaseapp.com","messagingSenderId":"938099259232","measurementId":"G-RJPFQXNSZB"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-08-14T15:05:52.099Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:871:11)
+    at execSync (node:child_process:943:15)
+    at prepareFrameworks (C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-14T15:10:34.455Z] ----------------------------------------------------------------------
+[debug] [2023-08-14T15:10:34.457Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-14T15:10:34.457Z] CLI Version:   12.4.7
+[debug] [2023-08-14T15:10:34.457Z] Platform:      win32
+[debug] [2023-08-14T15:10:34.457Z] Node Version:  v18.12.1
+[debug] [2023-08-14T15:10:34.458Z] Time:          Mon Aug 14 2023 17:10:34 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2023-08-14T15:10:34.458Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-14T15:10:34.516Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-14T15:10:34.517Z] > authorizing via signed-in user (pigny.antoine@gmail.com)
+[debug] [2023-08-14T15:10:34.517Z] [iam] checking project fkit-linking-app for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-14T15:10:34.520Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions [none]
+[debug] [2023-08-14T15:10:34.520Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions x-goog-quota-user=projects/fkit-linking-app
+[debug] [2023-08-14T15:10:34.520Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T15:10:35.244Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions 200
+[debug] [2023-08-14T15:10:35.245Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T15:10:35.245Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app [none]
+[debug] [2023-08-14T15:10:35.636Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app 200
+[debug] [2023-08-14T15:10:35.636Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app {"projectId":"fkit-linking-app","projectNumber":"938099259232","displayName":"FKIT-Linking-App","name":"projects/fkit-linking-app","resources":{"hostingSite":"fkit-linking-app","storageBucket":"fkit-linking-app.appspot.com","locationId":"europe-west2"},"state":"ACTIVE","etag":"1_00ac3435-01c5-4570-bc9b-fe8958599259"}
+[debug] [2023-08-14T15:10:40.075Z] defaultcredentials: writing to file C:\Users\pigny\AppData\Roaming\firebase\pigny_antoine_gmail.com_application_default_credentials.json
+[debug] [2023-08-14T15:10:40.076Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites pageToken=&pageSize=10
+[debug] [2023-08-14T15:10:40.479Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 200
+[debug] [2023-08-14T15:10:40.479Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites {"sites":[{"name":"projects/fkit-linking-app/sites/fkit-linking-app","defaultUrl":"https://fkit-linking-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-14T15:10:40.480Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 
+[debug] [2023-08-14T15:10:41.348Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 200
+[debug] [2023-08-14T15:10:41.349Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites {"sites":[{"name":"projects/fkit-linking-app/sites/fkit-linking-app","defaultUrl":"https://fkit-linking-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-14T15:10:41.349Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config [none]
+[debug] [2023-08-14T15:10:42.639Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config 200
+[debug] [2023-08-14T15:10:42.639Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config {"projectId":"fkit-linking-app","appId":"1:938099259232:web:0c23b6b55926e786bc5005","storageBucket":"fkit-linking-app.appspot.com","locationId":"europe-west2","apiKey":"AIzaSyDsNANqGLjrSY19jxY1f8oTn0U9lDKoZxk","authDomain":"fkit-linking-app.firebaseapp.com","messagingSenderId":"938099259232","measurementId":"G-RJPFQXNSZB"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-08-14T15:11:06.373Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:871:11)
+    at execSync (node:child_process:943:15)
+    at prepareFrameworks (C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-14T15:19:59.705Z] ----------------------------------------------------------------------
+[debug] [2023-08-14T15:19:59.707Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --force
+[debug] [2023-08-14T15:19:59.707Z] CLI Version:   12.4.7
+[debug] [2023-08-14T15:19:59.708Z] Platform:      win32
+[debug] [2023-08-14T15:19:59.708Z] Node Version:  v18.12.1
+[debug] [2023-08-14T15:19:59.708Z] Time:          Mon Aug 14 2023 17:19:59 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2023-08-14T15:19:59.709Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-14T15:19:59.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-14T15:19:59.771Z] > authorizing via signed-in user (pigny.antoine@gmail.com)
+[debug] [2023-08-14T15:19:59.771Z] [iam] checking project fkit-linking-app for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-14T15:19:59.774Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions [none]
+[debug] [2023-08-14T15:19:59.774Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions x-goog-quota-user=projects/fkit-linking-app
+[debug] [2023-08-14T15:19:59.774Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T15:20:00.504Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions 200
+[debug] [2023-08-14T15:20:00.504Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fkit-linking-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-14T15:20:00.505Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app [none]
+[debug] [2023-08-14T15:20:00.813Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app 200
+[debug] [2023-08-14T15:20:00.814Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app {"projectId":"fkit-linking-app","projectNumber":"938099259232","displayName":"FKIT-Linking-App","name":"projects/fkit-linking-app","resources":{"hostingSite":"fkit-linking-app","storageBucket":"fkit-linking-app.appspot.com","locationId":"europe-west2"},"state":"ACTIVE","etag":"1_00ac3435-01c5-4570-bc9b-fe8958599259"}
+[debug] [2023-08-14T15:20:05.394Z] defaultcredentials: writing to file C:\Users\pigny\AppData\Roaming\firebase\pigny_antoine_gmail.com_application_default_credentials.json
+[debug] [2023-08-14T15:20:05.395Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites pageToken=&pageSize=10
+[debug] [2023-08-14T15:20:06.292Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 200
+[debug] [2023-08-14T15:20:06.292Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites {"sites":[{"name":"projects/fkit-linking-app/sites/fkit-linking-app","defaultUrl":"https://fkit-linking-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-14T15:20:06.293Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 
+[debug] [2023-08-14T15:20:07.126Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites 200
+[debug] [2023-08-14T15:20:07.126Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fkit-linking-app/sites {"sites":[{"name":"projects/fkit-linking-app/sites/fkit-linking-app","defaultUrl":"https://fkit-linking-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-08-14T15:20:07.127Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config [none]
+[debug] [2023-08-14T15:20:07.885Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config 200
+[debug] [2023-08-14T15:20:07.886Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fkit-linking-app/webApps/-/config {"projectId":"fkit-linking-app","appId":"1:938099259232:web:0c23b6b55926e786bc5005","storageBucket":"fkit-linking-app.appspot.com","locationId":"europe-west2","apiKey":"AIzaSyDsNANqGLjrSY19jxY1f8oTn0U9lDKoZxk","authDomain":"fkit-linking-app.firebaseapp.com","messagingSenderId":"938099259232","measurementId":"G-RJPFQXNSZB"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-08-14T15:20:29.097Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:871:11)
+    at execSync (node:child_process:943:15)
+    at prepareFrameworks (C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\pigny\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
